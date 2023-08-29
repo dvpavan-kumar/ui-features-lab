@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+</head>
+
+<body>
+    <form>
+        <!-- heading1 -->
+        <h1 style="text-align: center;">Credit Card Payment Gateway</h1>
+        <table style="border-style: inset; padding: 15px; border-radius: 15px; background-color: floralwhite; margin: 0 auto;">
+            <!-- heading2 -->
+            <h2 style="text-align: center;">Payment Details</h2>
+            <!-- paragraph -->
+            <p style="text-align: center;">
+                <img src="https://icons.iconarchive.com/icons/webiconset/payment/64/Mastercard-icon.png">
+                <img src="https://icons.iconarchive.com/icons/webiconset/payment/64/American-Express-icon.png">
+                <img src="https://icons.iconarchive.com/icons/webiconset/payment/64/VISA-icon.png">
+                <img src="https://icons.iconarchive.com/icons/webiconset/payment/64/PayPal-icon.png">
+            </p>
+            <!-- row -->
+            <tr>
+                <td>
+                    <label for="cardNumber">Card Number</label><br>
+                    <input type="number" id="cardNumber" placeholder="Valid Card Number">
+                </td>
+            </tr>
+            <!-- row -->
+            <tr>
+                <td>
+                    <label for="expirationDate">Expiration Date</label><br>
+                    <input type="number" id="expirationDate" placeholder="Expiration Date">
+                </td>
+                <td>
+                    <label for="cvCode">CV Code</label><br>
+                    <input type="number" id="cvCode" placeholder="CVV">
+                </td>
+            </tr>
+            <!-- row -->
+            <tr>
+                <td>
+                    <label for="cardOwnerName">Card Owner Name</label><br>
+                    <input type="text" id="cardOwnerName" placeholder="Card Owner Name">
+                </td>
+            </tr>
+        </table>
+        <!-- paragraph -->
+        <p style="text-align: center;">Confirm your payment <input type="submit"></p>
+    </form>
+</body>
+
+</html>
