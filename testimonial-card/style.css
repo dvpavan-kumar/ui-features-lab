@@ -1,82 +1,97 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Noto+Sans+TC:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f4f4f4;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #BACAD9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 10px;
 }
-
+.card{
+  padding: 40px;
+  color: #000;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 .testimonial-container {
-  background-color: #0cb734;
-  color: #fff;
-  border-radius: 15px;
-  margin: 20px auto;
-  padding: 50px 80px;
-  max-width: 768px;
+  max-width: 745px;
   position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.matter {
+  background-color: #ffff;
+  color: #000;
+  border-radius: 15px;
+  max-width: 745px;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  margin: 12px 0 12px 0;
 }
 
-.fa-quote {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 28px;
-  position: absolute;
-  top: 70px;
-}
-
-.fa-quote-right {
-  left: 40px;
-}
-
-.fa-quote-left {
-  right: 40px;
+.quote {
+  color: #000;
+  width: 39px;
+  height: 29px;
 }
 
 .testimonial {
-  line-height: 28px;
-  text-align: justify;
+  align-self: stretch;
+  color: #000;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.5px;
+  margin: 0;
 }
 
 .user {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 10px;
 }
-
 .user .user-image {
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
   object-fit: cover;
 }
 
-.user .user-details {
-  margin-left: 10px;
-}
-
-.user .username {
+.username {
   margin: 0;
+  color: #000;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 
-.user .role {
+.role {
   font-weight: normal;
-  margin: 10px 0;
+  margin: 5px 0 0 0;
 }
 
 .progress-bar {
-  background-color: #fff;
+  background-color: #000;
   height: 4px;
   width: 100%;
+  margin-bottom: 5px;
   animation: grow 10s linear infinite;
   transform-origin: left;
 }
@@ -88,10 +103,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .testimonial-container {
-    padding: 20px 30px;
-  }
-
   .fa-quote {
     display: none;
   }
