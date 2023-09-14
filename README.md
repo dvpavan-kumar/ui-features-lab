@@ -13,3 +13,5 @@
 
  coming-soon-pages
         --page0          --    live:[https://dvpavan-kumar.github.io/ui-features-lab/coming-soon-pages/page0]
+
+ testimonial-card        --    live :[https://dvpavan-kumar.github.io/ui-features-lab/testimonial-card/]        
